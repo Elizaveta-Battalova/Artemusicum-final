@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  background-color: #230c01;
+  position: fixed;
+  width: 100%;
+  opacity: 0.95;
+  margin-bottom: 300px;
+  z-index: 99;
+}
+.logo-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-text {
+  text-align: center;
+}
+
+.logo {
+  width: 110px;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 10px;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-top: 9px;
+  font-family: "augustus";
+}
+.nav-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.back-button {
+  color: white;
+}
+main {
+  width: 90%;
+  margin: auto;
+}
+.am-container img {
+  width: 300px;
+}
+.am-container {
+  margin-top: 150px;
+  text-align: center;
+}
+footer {
+  background-color: #230c01;
+}
+main img {
+  width: 100%;
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
+  transition: all 100ms ease-out;
+}
+
+main img:hover {
+  transform: scale(1.04);
+  -webkit-filter: sepia(0);
+  filter: sepia(0);
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.footer-info {
+  color: white;
+  display: block;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media img {
+  width: 40px;
+  margin-left: 10px;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+  header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .ensemble-logo {
+    width: 200px;
+  }
+  .img {
+    width: 300px;
+  }
+  .back {
+    padding-top: 100px;
+  }
+  .logo {
+    width: 50px;
+  }
+  h1 {
+    font-size: 30px;
+    font-family: "augustus";
+    letter-spacing: 0;
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+  .social-media img {
+    width: 30px;
+  }
+  footer {
+    width: 100%;
+    background-color: #230c01;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .am-container img {
+    width: 350px;
+  }
+}
